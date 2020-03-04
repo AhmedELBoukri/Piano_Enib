@@ -13,24 +13,6 @@
 import wave
 import struct
 import binascii
-import math
-import random
-
-''' lecture d'un fichier WAV 16 bits mono
-    retourne :
-    data = liste des échantillons
-    fech = fréquence d'échantillonage
-'''
-def ouvrir_wav( nom_fichier ):
-    
-    data = [] # liste des échantillons, vide si fichier pas mono ou pas sur 16 bits
-        
-    fichier = wave.open( nom_fichier,'rb' ) # ouverture du fichier en lecture
-    fech = fichier.getframerate() # fréquence d'échantillonnage
-    
-##    if (fichier.getnchannels() != 1): # test si mono
-##        print('Le fichier son doit être mono.')
-##
 ##    elif (fichier.getsampwidth() != 2): # test profondeur encodage
 ##        print('Le fichier son doit être encodé sur 16 bits. (Ici: '+str(8*fichier.getsampwidth())+' bits.)')
 ##                
