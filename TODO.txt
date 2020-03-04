@@ -1,0 +1,41 @@
+Objectifs
+=========
+Développer une application interactive pour :
+  - créer des sons
+  - les visualiser sous forme d'onde
+  - jouer les sons (notes) sur un clavier de piano sur 1 puis 2 octaves puis 3 ...
+  - apprendre à reconnaitre les notes de piano
+  - apprendre à jouer des accords (3 notes) au piano
+  - apprendre à jouer des renversements d'accords
+Etapes
+======
+Proposer et implémenter une IHM pour créer des sons (notes pures, harmoniques,accords)  au format wav.
+   - http://fsincere.free.fr/isn/python/cours_python_ch9.php
+   - http://freesoundeditor.com/docwave.htm
+   - http://blog.acipo.com/wave-generation-in-python
+   - https://www.tutorialspoint.com/read-and-write-wav-files-using-python-wave
+   - https://www.programcreek.com/python/example/82393/wave.open
+Proposer une IHM pour visualiser un son pur puis un son (une note)  avec des harmoniques.
+   - https://f5zv.pagesperso-orange.fr/RADIO/RM/RM23/RM23B/RM23B04.htm
+   - http://tpecan.free.fr/index.php?page=echantillonnage
+Implémenter une IHM pour jouer des notes sur un clavier de piano à 1 (puis 2 puis 3...) octave(s)
+Enrichir l'IHM pour apprendre à reconnaitre les notes sur le clavier
+Enrichir l'IHM pour visualiser et jouer des accords au piano
+Enrichir l'IHM pour visualiser et jouer les accords et leur renversement
+
+Annexes
+=======
+Pour vous aider à mettre en place cette application interactive :
+  - create_notes_frequencies_db.py : stocker dans une BD les frequences des notes de gammes musicales
+  - audio_create_notes_wav.py :  creer un fichier wav pour une frequence (note)
+  - audio_create_chords_wav.py :  creer un fichier wav pour un accords (3 notes)
+  - audio.py : code utile pour la gestion des fichiers au format wav (Fabrice Sincère ; Jean-Claude Meilland, ...)
+  - frequencies_MVC.py :  implementer une IHM pour visualiser les sons
+      - Le modèle  : frequencies_model.py
+      - La vue : frequencies_view.py
+      - Le Contrôleur : frequencies_controller.py
+  - piano_MVC.py : implementer une IHM pour représenter un clavier de piano
+      - Le modèle  : piano_model.py
+      - La vue : piano_view.py
+      - Le Contrôleur : piano_controller.py
+
